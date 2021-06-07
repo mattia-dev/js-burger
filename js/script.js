@@ -1,0 +1,1 @@
+var total = document.getElementById('total');
