@@ -1,6 +1,30 @@
+body {
+    background-color: #fff5e2;
+}
+
 .container-big {
     margin-left: 0;
     padding-left: 0;
+}
+
+header {
+    height: 100px;
+    background-color: #fdbb40;
+    position: relative;
+}
+
+header > div {
+    position: absolute;
+    bottom: 10px;
+}
+
+main {
+    background-color: white;
+}
+
+#burger-name {
+    padding: 40px 0;
+    color: grey;
 }
 
 .ingredient {
@@ -11,17 +35,36 @@
     width: 50px;
 }
 
-header {
-    height: 100px;
-    background-color: #fdbb40;
+.ingredient span, .ingredient label, .discount-section label  {
+    font-weight: bold;
 }
 
-#burger-name {
-    color: grey;
+.ingredient span {
+    margin: 0 10px;
+}
+
+.ingredient input {
+    vertical-align: text-bottom;
+}
+
+.ingredient label {
+    color: #d33359;
 }
 
 .discount-section {
     margin-top: 30px;
+    height: 60px;
+}
+
+.discount-section label {
+    margin-right: 5px;
+}
+
+.discount-section input {
+    background-color: rgba(253, 187, 64, .2);
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .btn-warning {
@@ -31,10 +74,14 @@ header {
 
 #calculate-button {
     font-weight: bold;
-    margin: 20px 0 100px 0;
+    margin: 20px 0 60px 0;
 }
 
 footer {
-    height: 80px;
+    color: white;
     background-color: #d33359;
+}
+
+footer > div {
+    height: 80px;
 }

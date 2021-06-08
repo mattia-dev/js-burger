@@ -18,93 +18,95 @@
                     </div>
                 </header>
                 
-                <div class="container">
-                    <h2 id="burger-name">Classic Burger</h2>
-                </div>
-                
-                <div class="ingredients-selection container">
-                    <h3>Ingredients</h3>
+                <main>
+                    <div class="container">
+                        <h2 id="burger-name">Classic Burger</h2>
+                    </div>
+                    
+                    <div class="ingredients-selection container">
+                        <h3>Ingredients</h3>
 
-                    <div class="row">
-                        <div class="ingredient col-6">
-                            <img src="./img/cheese.svg" alt="cheese">
+                        <div class="row">
+                            <div class="ingredient col-6">
+                                <img src="./img/cheese.svg" alt="cheese">
+                                
+                                <span>Cheese</span>
+                                
+                                <input type="checkbox" class="check-ingredients form-check-input" value="3" id="cheese">
+                                
+                                <label for="cheese">add</label>
+                            </div>
+                
+                            <div class="ingredient col-6">
+                                <img src="./img/tomato.svg" alt="tomato">
+                                
+                                <span>Tomato</span>
+                                
+                                <input type="checkbox" class="check-ingredients form-check-input" value="2.5" id="tomato">
+                                
+                                <label for="tomato">add</label>
+                            </div>
                             
-                            <span>Cheese</span>
+                            <div class="ingredient col-6">
+                                <img src="./img/fried-egg.svg" alt="egg">
+                                
+                                <span>Egg</span>
+                                
+                                <input type="checkbox" class="check-ingredients form-check-input" value="3.5" id="egg">
+                                
+                                <label for="egg">add</label>
+                            </div>
                             
-                            <input type="checkbox" class="check-ingredients" value="3" id="cheese">
+                            <div class="ingredient col-6">
+                                <img src="./img/lettuce.svg" alt="lettuce">
+                                
+                                <span>Lettuce</span>
+                                
+                                <input type="checkbox" class="check-ingredients form-check-input" value="2" id="lettuce">
+                                
+                                <label for="lettuce">add</label>
+                            </div>
                             
-                            <label for="cheese">add</label>
-                        </div>
-            
-                        <div class="ingredient col-6">
-                            <img src="./img/tomato.svg" alt="tomato">
+                            <div class="ingredient col-6">
+                                <img src="./img/mustard.svg" alt="mustard">
+                                
+                                <span>Mustard</span>
+                                
+                                <input type="checkbox" class="check-ingredients form-check-input" value="1.5" id="mustard">
+                                
+                                <label for="mustard">add</label>
+                            </div>
                             
-                            <span>Tomato</span>
-                            
-                            <input type="checkbox" class="check-ingredients" value="2.5" id="tomato">
-                            
-                            <label for="tomato">add</label>
+                            <div class="ingredient col-6">
+                                <img src="./img/ketchup.svg" alt="ketchup">
+                                
+                                <span>Ketchup</span>
+                                
+                                <input type="checkbox" class="check-ingredients form-check-input" value="1" id="ketchup">
+                                
+                                <label for="ketchup">add</label>
+                            </div>
                         </div>
                         
-                        <div class="ingredient col-6">
-                            <img src="./img/fried-egg.svg" alt="egg">
+                        <div class="discount-section">
+                            <label for="discount-coupon">Discount Coupon</label>
                             
-                            <span>Egg</span>
+                            <input type="text" id="discount-coupon" placeholder=" Type here..." size="50">
                             
-                            <input type="checkbox" class="check-ingredients" value="3.5" id="egg">
-                            
-                            <label for="egg">add</label>
+                            <div id="discount-comment">ciao</div>
                         </div>
                         
-                        <div class="ingredient col-6">
-                            <img src="./img/lettuce.svg" alt="lettuce">
-                            
-                            <span>Lettuce</span>
-                            
-                            <input type="checkbox" class="check-ingredients" value="2" id="lettuce">
-                            
-                            <label for="lettuce">add</label>
-                        </div>
-                        
-                        <div class="ingredient col-6">
-                            <img src="./img/mustard.svg" alt="mustard">
-                            
-                            <span>Mustard</span>
-                            
-                            <input type="checkbox" class="check-ingredients" value="1.5" id="mustard">
-                            
-                            <label for="mustard">add</label>
-                        </div>
-                        
-                        <div class="ingredient col-6">
-                            <img src="./img/ketchup.svg" alt="ketchup">
-                            
-                            <span>Ketchup</span>
-                            
-                            <input type="checkbox" class="check-ingredients" value="1" id="ketchup">
-                            
-                            <label for="ketchup">add</label>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-lg btn-warning" id="calculate-button">calculate</button>
                         </div>
                     </div>
-                    
-                    <div class="discount-section">
-                        <label for="discount-coupon">Discount Coupon</label>
-                        
-                        <input type="text" id="discount-coupon" placeholder="Type here..." size="30">
-                        
-                        <span id="discount-comment"></span>
-                    </div>
-                    
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-lg btn-warning" id="calculate-button">calculate</button>
-                    </div>
-                </div>
+                </main>
             
                 <footer>
-                    <div class="container d-flex justify-content-between">
-                        <div>Your Price</div>
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <h4 class="self-align-center">Your Price</h4>
                         
-                        <div id="total"></div>
+                        <h2 id="total"></h2>
                     </div>
                 </footer>
             </div>
