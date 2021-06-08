@@ -17,83 +17,81 @@
     <div class="ingredients-selection">
         <h3>Ingredients</h3>
 
-        <form>
-            <div class="ingredient">
-                <img src="" alt="">
+        <div class="ingredient">
+            <img src="" alt="">
 
-                <span>cheese</span>
+            <span>cheese</span>
 
-                <input type="checkbox" class="check-ingredients" name="ingredients1" value="3" id="cheese">
+            <input type="checkbox" class="check-ingredients" value="3" id="cheese">
 
-                <label for="cheese">add</label>
-            </div>
+            <label for="cheese">add</label>
+        </div>
 
-            <div class="ingredient">
-                <img src="" alt="">
+        <div class="ingredient">
+            <img src="" alt="">
 
-                <span>egg</span>
+            <span>egg</span>
 
-                <input type="checkbox" class="check-ingredients" name="ingredients2" value="3.5" id="egg">
+            <input type="checkbox" class="check-ingredients" value="3.5" id="egg">
 
-                <label for="egg">add</label>
-            </div>
+            <label for="egg">add</label>
+        </div>
 
-            <div class="ingredient">
-                <img src="" alt="">
+        <div class="ingredient">
+            <img src="" alt="">
 
-                <span>mustard</span>
+            <span>mustard</span>
 
-                <input type="checkbox" class="check-ingredients" name="ingredients3" value="1.5" id="mustard">
+            <input type="checkbox" class="check-ingredients" value="1.5" id="mustard">
 
-                <label for="mustard">add</label>
-            </div>
+            <label for="mustard">add</label>
+        </div>
 
-            <div class="ingredient">
-                <img src="" alt="">
+        <div class="ingredient">
+            <img src="" alt="">
 
-                <span>tomato</span>
+            <span>tomato</span>
 
-                <input type="checkbox" class="check-ingredients" name="ingredients4" value="2.5" id="tomato">
+            <input type="checkbox" class="check-ingredients" value="2.5" id="tomato">
 
-                <label for="tomato">add</label>
-            </div>
+            <label for="tomato">add</label>
+        </div>
+        
+        <div class="ingredient">
+            <img src="" alt="">
+
+            <span>lettuce</span>
+
+            <input type="checkbox" class="check-ingredients" value="2" id="lettuce">
+
+            <label for="lettuce">add</label>
+        </div>
+        
+        <div class="ingredient">
+            <img src="" alt="">
+
+            <span>ketchup</span>
+
+            <input type="checkbox" class="check-ingredients" value="1" id="ketchup">
+
+            <label for="ketchup">add</label>
+        </div>
+
+        <div class="ingredient">
+            <label for="discount-coupon">Discount Coupon</label>
             
-            <div class="ingredient">
-                <img src="" alt="">
-
-                <span>lettuce</span>
-
-                <input type="checkbox" class="check-ingredients" name="ingredients5" value="2" id="lettuce">
-
-                <label for="lettuce">add</label>
-            </div>
-            
-            <div class="ingredient">
-                <img src="" alt="">
-
-                <span>ketchup</span>
-
-                <input type="checkbox" class="check-ingredients" name="ingredients6" value="1" id="ketchup">
-
-                <label for="ketchup">add</label>
-            </div>
-
-            <div class="ingredient">
-                <label for="discount-coupon">Discount Coupon</label>
-                
-                <input type="text" name="ingredients" id="discount-coupon" placeholder="12345ABCDE">
-            </div>
-            
-            <div class="ingredient">
-                <button id="calculate-button">calculate</button>
-            </div>
-        </form>
+            <input type="text" id="discount-coupon" placeholder="12345ABCDE">
+        </div>
+        
+        <div>
+            <button id="calculate-button">calculate</button>
+        </div>
     </div>
 
     <footer>
         <div>Your Price</div>
 
-        <div id="total">$ </div>
+        <div id="total"></div>
     </footer>
 
     <script type="text/javascript" src="./js/script.js"></script>
