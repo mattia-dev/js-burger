@@ -18,6 +18,13 @@ header > div {
     bottom: 10px;
 }
 
+header img {
+    width: 180px;
+    position: absolute;
+    left: 100%;
+    transform: translate(-70%, -10%);
+}
+
 main {
     background-color: white;
 }

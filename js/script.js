@@ -8,7 +8,7 @@ discountCodes30 = ["MAY30", "JUNE30", "JULY30", "AUGUST30"];
 
 var basePrice = 10;
 
-// burgerName.innerHTML = prompt("Come vuoi chiamare il tuo hamburger?");
+burgerName.innerHTML = prompt("Come vuoi chiamare il tuo hamburger?");
 
 total.innerHTML = "$ " + basePrice.toFixed(2);
 
