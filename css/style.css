@@ -1,0 +1,40 @@
+.container-big {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.ingredient {
+    margin-top: 15px;
+}
+
+.ingredient img {
+    width: 50px;
+}
+
+header {
+    height: 100px;
+    background-color: #fdbb40;
+}
+
+#burger-name {
+    color: grey;
+}
+
+.discount-section {
+    margin-top: 30px;
+}
+
+.btn-warning {
+    background-color: #fdbb40;
+    border-color: #fdbb40;
+}
+
+#calculate-button {
+    font-weight: bold;
+    margin: 20px 0 100px 0;
+}
+
+footer {
+    height: 80px;
+    background-color: #d33359;
+}

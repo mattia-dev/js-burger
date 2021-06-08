@@ -4,96 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Burger Factory</title>
 </head>
 <body>
-    <header>
-        <h1>Create Your Burger</h1>
-    </header>
+    <div class="container container-big">
+        <div class="row">
+            <div class="col-6">
+                <header>
+                    <div class="container">
+                        <h1>Create Your Burger</h1>
+                    </div>
+                </header>
+                
+                <div class="container">
+                    <h2 id="burger-name">Classic Burger</h2>
+                </div>
+                
+                <div class="ingredients-selection container">
+                    <h3>Ingredients</h3>
 
-    <h2>Factory Burger</h2>
-
-    <div class="ingredients-selection">
-        <h3>Ingredients</h3>
-
-        <div class="ingredient">
-            <img src="" alt="">
-
-            <span>cheese</span>
-
-            <input type="checkbox" class="check-ingredients" value="3" id="cheese">
-
-            <label for="cheese">add</label>
-        </div>
-
-        <div class="ingredient">
-            <img src="" alt="">
-
-            <span>egg</span>
-
-            <input type="checkbox" class="check-ingredients" value="3.5" id="egg">
-
-            <label for="egg">add</label>
-        </div>
-
-        <div class="ingredient">
-            <img src="" alt="">
-
-            <span>mustard</span>
-
-            <input type="checkbox" class="check-ingredients" value="1.5" id="mustard">
-
-            <label for="mustard">add</label>
-        </div>
-
-        <div class="ingredient">
-            <img src="" alt="">
-
-            <span>tomato</span>
-
-            <input type="checkbox" class="check-ingredients" value="2.5" id="tomato">
-
-            <label for="tomato">add</label>
-        </div>
-        
-        <div class="ingredient">
-            <img src="" alt="">
-
-            <span>lettuce</span>
-
-            <input type="checkbox" class="check-ingredients" value="2" id="lettuce">
-
-            <label for="lettuce">add</label>
-        </div>
-        
-        <div class="ingredient">
-            <img src="" alt="">
-
-            <span>ketchup</span>
-
-            <input type="checkbox" class="check-ingredients" value="1" id="ketchup">
-
-            <label for="ketchup">add</label>
-        </div>
-
-        <div class="ingredient">
-            <label for="discount-coupon">Discount Coupon</label>
+                    <div class="row">
+                        <div class="ingredient col-6">
+                            <img src="./img/cheese.svg" alt="cheese">
+                            
+                            <span>Cheese</span>
+                            
+                            <input type="checkbox" class="check-ingredients" value="3" id="cheese">
+                            
+                            <label for="cheese">add</label>
+                        </div>
             
-            <input type="text" id="discount-coupon" placeholder="12345ABCDE">
-        </div>
-        
-        <div>
-            <button id="calculate-button">calculate</button>
+                        <div class="ingredient col-6">
+                            <img src="./img/tomato.svg" alt="tomato">
+                            
+                            <span>Tomato</span>
+                            
+                            <input type="checkbox" class="check-ingredients" value="2.5" id="tomato">
+                            
+                            <label for="tomato">add</label>
+                        </div>
+                        
+                        <div class="ingredient col-6">
+                            <img src="./img/fried-egg.svg" alt="egg">
+                            
+                            <span>Egg</span>
+                            
+                            <input type="checkbox" class="check-ingredients" value="3.5" id="egg">
+                            
+                            <label for="egg">add</label>
+                        </div>
+                        
+                        <div class="ingredient col-6">
+                            <img src="./img/lettuce.svg" alt="lettuce">
+                            
+                            <span>Lettuce</span>
+                            
+                            <input type="checkbox" class="check-ingredients" value="2" id="lettuce">
+                            
+                            <label for="lettuce">add</label>
+                        </div>
+                        
+                        <div class="ingredient col-6">
+                            <img src="./img/mustard.svg" alt="mustard">
+                            
+                            <span>Mustard</span>
+                            
+                            <input type="checkbox" class="check-ingredients" value="1.5" id="mustard">
+                            
+                            <label for="mustard">add</label>
+                        </div>
+                        
+                        <div class="ingredient col-6">
+                            <img src="./img/ketchup.svg" alt="ketchup">
+                            
+                            <span>Ketchup</span>
+                            
+                            <input type="checkbox" class="check-ingredients" value="1" id="ketchup">
+                            
+                            <label for="ketchup">add</label>
+                        </div>
+                    </div>
+                    
+                    <div class="discount-section">
+                        <label for="discount-coupon">Discount Coupon</label>
+                        
+                        <input type="text" id="discount-coupon" placeholder="Type here..." size="30">
+                        
+                        <span id="discount-comment"></span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-lg btn-warning" id="calculate-button">calculate</button>
+                    </div>
+                </div>
+            
+                <footer>
+                    <div class="container d-flex justify-content-between">
+                        <div>Your Price</div>
+                        
+                        <div id="total"></div>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
-
-    <footer>
-        <div>Your Price</div>
-
-        <div id="total"></div>
-    </footer>
-
+    
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
